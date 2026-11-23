@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>传送门最新地址 - 官方发布 | 视频内容生态品牌官网</title>
+<meta name="description" content="传送门最新地址官方网站，聚焦视频内容生态与创作者社区，提供原创高清视频、行业观察、创作者故事与企业动态，持续运营值得信赖的视频品牌平台。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Cpath d='M20 18h14a10 10 0 0 1 0 20h-6v8h-8V18zm8 7v6h6a3 3 0 0 0 0-6h-6z' fill='%2338bdf8'/%3E%3Ccircle cx='46' cy='46' r='7' fill='%23f472b6'/%3E%3C/svg%3E">
+<style>
+:root{
+  --pt-navy:#0b1220;
+  --pt-slate:#111c30;
+  --pt-card:#16233a;
+  --pt-line:rgba(120,160,220,.22);
+  --pt-cyan:#38bdf8;
+  --pt-pink:#f472b6;
+  --pt-amber:#fbbf24;
+  --pt-text:#e6eefb;
+  --pt-muted:#9db1cc;
+  --pt-soft:#c9d8ee;
+  --pt-head-h:118px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--pt-head-h)}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:radial-gradient(1200px 600px at 80% -10%,rgba(56,189,248,.14),transparent 60%),radial-gradient(900px 500px at 0% 10%,rgba(244,114,182,.10),transparent 60%),var(--pt-navy);
+  color:var(--pt-text);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+.pt-wrap{width:min(1180px,92vw);margin:0 auto}
+.pt-sticky{position:sticky;top:0;z-index:60}
+
+/* 公告条 */
+.pt-notice{background:linear-gradient(90deg,#0e2a4a,#123152 45%,#1b2b4d);border-bottom:1px solid var(--pt-line);font-size:13px}
+.pt-notice-inner{display:flex;align-items:center;gap:12px;padding:9px 0;overflow:hidden}
+.pt-notice-tag{flex:0 0 auto;background:var(--pt-pink);color:#1a0a14;font-weight:700;font-size:11px;letter-spacing:.08em;padding:2px 8px;border-radius:4px}
+.pt-notice-scroll{flex:1;overflow:hidden;white-space:nowrap;color:var(--pt-soft)}
+.pt-notice-scroll span{display:inline-block;padding-right:48px;animation:ptSlide 26s linear infinite}
+.pt-notice-scroll a{color:var(--pt-cyan);border-bottom:1px dashed rgba(56,189,248,.5)}
+.pt-notice-date{color:var(--pt-muted);font-size:12px;flex:0 0 auto}
+@keyframes ptSlide{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* 页头 */
+.pt-header{background:rgba(11,18,32,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--pt-line)}
+.pt-header-inner{display:flex;align-items:center;gap:22px;padding:14px 0;flex-wrap:wrap}
+.pt-brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.02em;font-size:19px}
+.pt-brand-mark{width:36px;height:36px;border-radius:10px;background:linear-gradient(140deg,var(--pt-cyan),#2563eb 55%,var(--pt-pink));display:grid;place-items:center;font-size:15px;color:#04121f;font-weight:900}
+.pt-brand small{display:block;font-size:10px;font-weight:500;color:var(--pt-muted);letter-spacing:.22em}
+.pt-nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.pt-nav a{padding:7px 12px;border-radius:8px;font-size:14px;color:var(--pt-soft);transition:.2s}
+.pt-nav a:hover,.pt-nav a.active{background:rgba(56,189,248,.14);color:#fff}
+.pt-search{position:relative;flex:0 0 220px}
+.pt-search input{width:100%;background:var(--pt-card);border:1px solid var(--pt-line);border-radius:9px;padding:9px 12px 9px 34px;color:var(--pt-text);font-size:13px;outline:none;transition:.2s}
+.pt-search input:focus{border-color:var(--pt-cyan);box-shadow:0 0 0 3px rgba(56,189,248,.16)}
+.pt-search::before{content:"⌕";position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--pt-muted);font-size:16px}
+.pt-search-hint{position:absolute;left:0;right:0;top:calc(100% + 6px);background:var(--pt-card);border:1px solid var(--pt-line);border-radius:9px;font-size:12px;color:var(--pt-muted);padding:8px 10px;display:none;z-index:80}
+.pt-menu-btn{display:none;background:var(--pt-card);border:1px solid var(--pt-line);color:var(--pt-text);border-radius:8px;padding:8px 12px;font-size:14px}
+
+/* 首屏：左文右侧大图 */
+.pt-hero{padding:52px 0 34px;position:relative;overflow:hidden}
+.pt-hero-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,4fr);gap:40px;align-items:center}
+.pt-hero-kicker{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.16em;color:var(--pt-cyan);border:1px solid rgba(56,189,248,.35);background:rgba(56,189,248,.08);padding:4px 12px;border-radius:99px;margin-bottom:18px}
+.pt-hero h1{font-size:clamp(30px,4.6vw,54px);line-height:1.16;font-weight:900;letter-spacing:-.01em}
+.pt-hero h1 em{font-style:normal;background:linear-gradient(100deg,var(--pt-cyan),var(--pt-pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+.pt-hero-lead{margin-top:16px;color:var(--pt-soft);font-size:15.5px;max-width:34em}
+.pt-hero-desc{margin-top:14px;color:var(--pt-muted);font-size:14px;max-width:36em;border-left:2px solid rgba(56,189,248,.4);padding-left:14px}
+.pt-hero-cta{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+.pt-btn{display:inline-flex;align-items:center;gap:8px;border:none;border-radius:10px;padding:11px 20px;font-size:14px;font-weight:700;transition:.2s}
+.pt-btn-main{background:linear-gradient(120deg,var(--pt-cyan),#3b82f6);color:#04121f}
+.pt-btn-main:hover{filter:brightness(1.12);transform:translateY(-1px)}
+.pt-btn-ghost{background:transparent;color:var(--pt-text);border:1px solid var(--pt-line)}
+.pt-btn-ghost:hover{border-color:var(--pt-cyan);color:var(--pt-cyan)}
+.pt-hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:28px}
+.pt-stat{background:linear-gradient(160deg,rgba(22,35,58,.9),rgba(14,24,42,.9));border:1px solid var(--pt-line);border-radius:12px;padding:12px 14px}
+.pt-stat b{display:block;font-size:21px;color:#fff;letter-spacing:.01em}
+.pt-stat span{font-size:11.5px;color:var(--pt-muted)}
+.pt-hero-art{position:relative}
+.pt-hero-art figure{border-radius:18px;overflow:hidden;border:1px solid var(--pt-line);box-shadow:0 24px 60px rgba(3,8,18,.6)}
+.pt-hero-badge{position:absolute;left:-14px;bottom:18px;background:var(--pt-card);border:1px solid var(--pt-line);border-radius:12px;padding:10px 14px;font-size:12px;color:var(--pt-soft);box-shadow:0 12px 30px rgba(0,0,0,.5)}
+.pt-hero-badge b{color:var(--pt-amber)}
+
+/* 通用 section */
+.pt-section{padding:46px 0}
+.pt-sec-head{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:24px;border-bottom:1px solid var(--pt-line);padding-bottom:14px}
+.pt-sec-head h2{font-size:clamp(21px,2.6vw,28px);font-weight:800;letter-spacing:.01em}
+.pt-sec-head p{color:var(--pt-muted);font-size:13px;flex:1;min-width:200px}
+.pt-sec-idx{font-size:12px;letter-spacing:.2em;color:var(--pt-cyan);border:1px solid rgba(56,189,248,.3);border-radius:6px;padding:2px 8px}
+
+/* 焦点内容 */
+.pt-focus-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:26px}
+.pt-feature{background:var(--pt-card);border:1px solid var(--pt-line);border-radius:16px;overflow:hidden;transition:.25s}
+.pt-feature:hover{transform:translateY(-3px);border-color:rgba(56,189,248,.45)}
+.pt-feature figure{position:relative;aspect-ratio:16/9;background:#0d1729}
+.pt-feature img{width:100%;height:100%;object-fit:cover}
+.pt-play{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(180deg,rgba(4,10,22,.05),rgba(4,10,22,.55))}
+.pt-play i{width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;color:#0b1220;font-style:normal;font-size:20px;padding-left:4px;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+.pt-feature-body{padding:18px 20px}
+.pt-tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:9px}
+.pt-tag{font-size:11px;color:var(--pt-cyan);border:1px solid rgba(56,189,248,.32);border-radius:5px;padding:1px 7px;background:rgba(56,189,248,.07)}
+.pt-tag.pk{color:var(--pt-pink);border-color:rgba(244,114,182,.34);background:rgba(244,114,182,.08)}
+.pt-tag.am{color:var(--pt-amber);border-color:rgba(251,191,36,.32);background:rgba(251,191,36,.08)}
+.pt-feature h3{font-size:19px;line-height:1.45;font-weight:800}
+.pt-feature p{color:var(--pt-muted);font-size:13.5px;margin-top:8px}
+.pt-meta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;font-size:12px;color:var(--pt-muted);margin-top:13px}
+.pt-meta b{color:var(--pt-soft);font-weight:600}
+.pt-acts{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.pt-act{background:rgba(56,189,248,.08);border:1px solid var(--pt-line);color:var(--pt-soft);border-radius:8px;padding:6px 11px;font-size:12px;display:inline-flex;align-items:center;gap:6px;transition:.18s}
+.pt-act:hover{border-color:var(--pt-cyan);color:var(--pt-cyan)}
+.pt-act.on{background:rgba(244,114,182,.14);border-color:rgba(244,114,182,.5);color:var(--pt-pink)}
+.pt-list{display:flex;flex-direction:column;gap:14px}
+.pt-item{background:linear-gradient(160deg,rgba(22,35,58,.86),rgba(14,24,42,.86));border:1px solid var(--pt-line);border-radius:12px;padding:15px 16px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;transition:.2s}
+.pt-item:hover{border-color:rgba(56,189,248,.4);transform:translateX(2px)}
+.pt-item h3{font-size:15px;font-weight:700;line-height:1.5}
+.pt-item p{font-size:12.5px;color:var(--pt-muted);margin-top:5px}
+.pt-item-side{display:flex;flex-direction:column;align-items:flex-end;gap:6px;font-size:11.5px;color:var(--pt-muted);white-space:nowrap}
+.pt-item-side .pt-num{color:var(--pt-cyan);font-weight:700;font-size:13px}
+
+/* 关键词解析 */
+.pt-parse{background:linear-gradient(180deg,rgba(18,30,50,.7),rgba(11,18,32,.2));border:1px solid var(--pt-line);border-radius:18px;padding:30px clamp(18px,3.5vw,38px)}
+.pt-parse h3{font-size:17px;font-weight:800;margin:22px 0 8px;color:#fff;display:flex;gap:9px;align-items:center}
+.pt-parse h3::before{content:"";width:4px;height:16px;border-radius:3px;background:linear-gradient(var(--pt-cyan),var(--pt-pink))}
+.pt-parse h3:first-of-type{margin-top:6px}
+.pt-parse p{color:var(--pt-muted);font-size:14px;margin-bottom:10px}
+.pt-parse strong{color:var(--pt-soft);font-weight:700}
+.pt-parse-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:18px}
+.pt-parse-card{background:rgba(11,18,32,.6);border:1px solid var(--pt-line);border-radius:11px;padding:14px 16px}
+.pt-parse-card b{display:block;font-size:13px;color:var(--pt-cyan);margin-bottom:5px}
+.pt-parse-card span{font-size:12.5px;color:var(--pt-muted)}
+
+/* 专题 */
+.pt-topic-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.pt-topic{background:var(--pt-card);border:1px solid var(--pt-line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px;transition:.22s}
+.pt-topic:hover{transform:translateY(-3px);border-color:rgba(244,114,182,.4)}
+.pt-topic-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.pt-topic h3{font-size:16px;font-weight:800}
+.pt-status{font-size:11px;padding:2px 8px;border-radius:99px;background:rgba(251,191,36,.12);color:var(--pt-amber);border:1px solid rgba(251,191,36,.34);white-space:nowrap}
+.pt-status.done{background:rgba(56,189,248,.1);color:var(--pt-cyan);border-color:rgba(56,189,248,.34)}
+.pt-topic > p{font-size:13px;color:var(--pt-muted)}
+.pt-topic ul{list-style:none;display:flex;flex-direction:column;gap:6px;border-top:1px dashed var(--pt-line);padding-top:10px}
+.pt-topic li{font-size:12.5px;color:var(--pt-soft);display:flex;gap:8px}
+.pt-topic li::before{content:"▸";color:var(--pt-cyan);flex:0 0 auto}
+
+/* 作者 */
+.pt-author-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.pt-author{background:linear-gradient(165deg,rgba(22,35,58,.94),rgba(13,23,41,.94));border:1px solid var(--pt-line);border-radius:14px;padding:18px;transition:.22s;display:flex;flex-direction:column;gap:9px}
+.pt-author:hover{border-color:rgba(56,189,248,.5);transform:translateY(-3px)}
+.pt-avatar{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:17px;color:#04121f;flex:0 0 auto}
+.pt-author-top{display:flex;gap:12px;align-items:center}
+.pt-author-top b{font-size:15px;display:block}
+.pt-author-top span{font-size:11.5px;color:var(--pt-muted)}
+.pt-author p{font-size:12.5px;color:var(--pt-muted)}
+.pt-author-nums{display:flex;gap:14px;font-size:11.5px;color:var(--pt-muted);border-top:1px dashed var(--pt-line);padding-top:9px}
+.pt-author-nums b{color:var(--pt-soft);font-size:12.5px}
+
+/* 榜单 */
+.pt-board{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
+.pt-board-col{background:rgba(17,28,48,.8);border:1px solid var(--pt-line);border-radius:14px;padding:16px}
+.pt-board-col h3{font-size:15px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center}
+.pt-board-col h3 span{font-size:11px;color:var(--pt-muted);font-weight:400}
+.pt-rank{display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:1px dashed rgba(120,160,220,.14);font-size:13px}
+.pt-rank:last-child{border-bottom:none}
+.pt-rank i{width:20px;height:20px;border-radius:6px;background:rgba(56,189,248,.12);color:var(--pt-cyan);display:grid;place-items:center;font-style:normal;font-size:11px;font-weight:700;flex:0 0 auto}
+.pt-rank:first-of-type i{background:linear-gradient(120deg,var(--pt-amber),#f59e0b);color:#231503}
+.pt-rank span{flex:1;color:var(--pt-soft)}
+.pt-rank em{font-style:normal;font-size:11.5px;color:var(--pt-muted)}
+
+/* 评论 */
+.pt-comments{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.pt-comment{background:rgba(17,28,48,.72);border:1px solid var(--pt-line);border-left:3px solid var(--pt-cyan);border-radius:10px;padding:14px 16px}
+.pt-comment:nth-child(3n){border-left-color:var(--pt-pink)}
+.pt-comment:nth-child(3n+2){border-left-color:var(--pt-amber)}
+.pt-comment-head{display:flex;justify-content:space-between;font-size:12px;color:var(--pt-muted);margin-bottom:6px}
+.pt-comment-head b{color:var(--pt-soft)}
+.pt-comment p{font-size:13px;color:var(--pt-soft)}
+.pt-stars{color:var(--pt-amber);font-size:12px;letter-spacing:.08em}
+
+/* 动态 & 合作 */
+.pt-two-col{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,4fr);gap:22px}
+.pt-news{list-style:none;display:flex;flex-direction:column;gap:12px}
+.pt-news li{background:rgba(17,28,48,.7);border:1px solid var(--pt-line);border-radius:11px;padding:13px 15px}
+.pt-news time{font-size:11.5px;color:var(--pt-cyan);letter-spacing:.04em}
+.pt-news b{display:block;font-size:14px;margin:3px 0 4px}
+.pt-news p{font-size:12.5px;color:var(--pt-muted)}
+.pt-partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.pt-partner{background:rgba(17,28,48,.7);border:1px solid var(--pt-line);border-radius:10px;padding:14px 12px;text-align:center;font-size:13px;color:var(--pt-soft);transition:.2s}
+.pt-partner:hover{border-color:var(--pt-cyan);color:var(--pt-cyan)}
+.pt-partner small{display:block;font-size:11px;color:var(--pt-muted);margin-top:3px}
+
+/* FAQ */
+.pt-faq{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.pt-faq details{background:rgba(17,28,48,.72);border:1px solid var(--pt-line);border-radius:11px;padding:0 15px;overflow:hidden}
+.pt-faq details[open]{border-color:rgba(56,189,248,.4)}
+.pt-faq summary{cursor:pointer;list-style:none;padding:13px 0;font-size:14px;font-weight:600;color:var(--pt-soft);display:flex;justify-content:space-between;gap:12px}
+.pt-faq summary::-webkit-details-marker{display:none}
+.pt-faq summary::after{content:"＋";color:var(--pt-cyan);font-weight:700}
+.pt-faq details[open] summary::after{content:"－"}
+.pt-faq p{font-size:13px;color:var(--pt-muted);padding:0 0 14px}
+
+/* 页脚 */
+.pt-footer{margin-top:20px;background:linear-gradient(180deg,rgba(13,23,41,.4),#070d18);border-top:1px solid var(--pt-line);padding:38px 0 24px}
+.pt-footer-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,2fr) minmax(0,2fr) minmax(0,3fr);gap:26px}
+.pt-footer h4{font-size:13px;letter-spacing:.1em;color:var(--pt-soft);margin-bottom:11px}
+.pt-footer p,.pt-footer li{font-size:12.5px;color:var(--pt-muted);list-style:none;margin-bottom:6px}
+.pt-footer a:hover{color:var(--pt-cyan)}
+.pt-footer-brand{font-size:17px;font-weight:800;color:#fff;margin-bottom:8px}
+.pt-footer-bottom{border-top:1px solid var(--pt-line);margin-top:26px;padding-top:16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--pt-muted)}
+
+/* 回顶 & toast */
+.pt-top{position:fixed;right:20px;bottom:22px;width:44px;height:44px;border-radius:12px;background:rgba(22,35,58,.94);border:1px solid var(--pt-line);color:var(--pt-cyan);font-size:18px;display:none;place-items:center;z-index:70;box-shadow:0 10px 26px rgba(0,0,0,.5)}
+.pt-top.show{display:grid}
+.pt-toast{position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);background:rgba(22,35,58,.98);border:1px solid rgba(56,189,248,.5);color:var(--pt-text);font-size:13px;padding:10px 20px;border-radius:10px;opacity:0;pointer-events:none;transition:.25s;z-index:90}
+.pt-toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* 弹窗 */
+.pt-modal{position:fixed;inset:0;background:rgba(4,9,18,.78);backdrop-filter:blur(4px);display:none;place-items:center;z-index:100;padding:20px}
+.pt-modal.show{display:grid}
+.pt-modal-box{background:var(--pt-slate);border:1px solid rgba(56,189,248,.32);border-radius:16px;width:min(480px,94vw);padding:24px;box-shadow:0 30px 80px rgba(0,0,0,.7)}
+.pt-modal-box h3{font-size:17px;margin-bottom:8px}
+.pt-modal-box p{font-size:13px;color:var(--pt-muted);margin-bottom:14px}
+.pt-modal-box textarea,.pt-modal-box input{width:100%;background:var(--pt-navy);border:1px solid var(--pt-line);border-radius:9px;padding:10px 12px;color:var(--pt-text);font-size:13px;outline:none;margin-bottom:10px;font-family:inherit}
+.pt-modal-box textarea:focus,.pt-modal-box input:focus{border-color:var(--pt-cyan)}
+.pt-modal-close{float:right;background:none;border:none;color:var(--pt-muted);font-size:20px;line-height:1}
+
+@media (max-width:960px){
+  .pt-hero-grid,.pt-focus-grid,.pt-two-col{grid-template-columns:minmax(0,1fr)}
+  .pt-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pt-hero-art{order:-1}
+}
+@media (max-width:760px){
+  :root{--pt-head-h:150px}
+  .pt-menu-btn{display:inline-block;margin-left:auto}
+  .pt-nav{display:none;flex-basis:100%;order:5;margin-left:0;gap:2px}
+  .pt-nav.open{display:flex}
+  .pt-search{flex:1 1 140px;order:4}
+  .pt-hero-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .pt-stat b{font-size:17px}
+  .pt-footer-grid{grid-template-columns:minmax(0,1fr)}
+  .pt-item{grid-template-columns:minmax(0,1fr)}
+  .pt-item-side{flex-direction:row;align-items:center}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="pt-sticky">
+  <div class="pt-notice" role="region" aria-label="官网公告">
+    <div class="pt-wrap pt-notice-inner">
+      <span class="pt-notice-tag">官方发布</span>
+      <div class="pt-notice-scroll" id="ptNotice">
+        <span>「传送门最新地址」2026 冬季创作者大赛开始报名，投稿通道已开放 · 新增《在地影像·四城记》专题第一期上线 · 高清原创片库批量更新 128 部 · 品牌官网帮助中心完成改版，FAQ 增至 58 条 · 新一批官方伙伴入驻内容生态 · 企业动态：年度内容观察报告即将发布 · </span>
+        <span aria-hidden="true">「传送门最新地址」2026 冬季创作者大赛开始报名，投稿通道已开放 · 新增《在地影像·四城记》专题第一期上线 · 高清原创片库批量更新 128 部 · 品牌官网帮助中心完成改版，FAQ 增至 58 条 · 新一批官方伙伴入驻内容生态 · 企业动态：年度内容观察报告即将发布 · </span>
+      </div>
+      <span class="pt-notice-date">2026-11-22 更新</span>
+    </div>
+  </div>
+
+  <header class="pt-header">
+    <div class="pt-wrap pt-header-inner">
+      <a class="pt-brand" href="#ptTop">
+        <span class="pt-brand-mark">传</span>
+        <span>传送门最新地址<small>PORTAL VIDEO OFFICIAL</small></span>
+      </a>
+      <button class="pt-menu-btn" id="ptMenuBtn" aria-expanded="false" aria-controls="ptNav">菜单</button>
+      <nav class="pt-nav" id="ptNav" aria-label="主导航">
+        <a href="#ptFocus">焦点内容</a>
+        <a href="#ptParse">品牌解析</a>
+        <a href="#ptTopics">专题企划</a>
+        <a href="#ptAuthors">创作者</a>
+        <a href="#ptBoard">榜单</a>
+        <a href="#ptVoice">用户评价</a>
+        <a href="#ptFaq">帮助中心</a>
+      </nav>
+      <div class="pt-search" id="ptSearchWrap">
+        <input type="search" id="ptSearchInput" placeholder="搜索视频 / 专题 / 创作者" aria-label="站内搜索">
+        <div class="pt-search-hint" id="ptSearchHint"></div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="ptTop">
+
+  <!-- 首屏 -->
+  <section class="pt-hero pt-wrap" aria-labelledby="ptHeroTitle">
+    <div class="pt-hero-grid">
+      <div>
+        <span class="pt-hero-kicker">官方网站 · 官方发布 · 持续运营</span>
+        <h1 id="ptHeroTitle">传送门最新地址</h1>
+        <p class="pt-hero-lead">一个以原创高清视频为核心的内容品牌，为创作者与企业搭建值得信赖的内容生态。</p>
+        <p class="pt-hero-desc">传送门最新地址是面向视频内容行业的品牌官网，深耕影像记录、行业观察与创作者社区三大垂直领域。我们相信每一次真实的记录都能成为他人的入口，因此持续运营精品内容库、专题企划与开放投稿机制，让好内容被更多人看见。</p>
+        <div class="pt-hero-cta">
+          <a class="pt-btn pt-btn-main" href="#ptFocus">进入焦点内容 ▸</a>
+          <a class="pt-btn pt-btn-ghost" href="#ptAuthors">认识创作者</a>
+          <button class="pt-btn pt-btn-ghost" type="button" data-modal="ptSubmitModal">我要投稿</button>
+        </div>
+        <div class="pt-hero-stats">
+          <div class="pt-stat"><b>4,280+</b><span>官方高清原创视频</span></div>
+          <div class="pt-stat"><b>196</b><span>签约与入驻创作者</span></div>
+          <div class="pt-stat"><b>9,700万</b><span>累计播放与互动</span></div>
+        </div>
+      </div>
+      <div class="pt-hero-art">
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 560'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230b1a33'/%3E%3Cstop offset='0.55' stop-color='%23122a4d'/%3E%3Cstop offset='1' stop-color='%231d1440'/%3E%3C/linearGradient%3E%3CradialGradient id='portal' cx='0.5' cy='0.5' r='0.5'%3E%3Cstop offset='0' stop-color='%2338bdf8'/%3E%3Cstop offset='0.55' stop-color='%232563eb'/%3E%3Cstop offset='1' stop-color='%23f472b6'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='720' height='560' fill='url(%23sky)'/%3E%3Ccircle cx='360' cy='255' r='150' fill='url(%23portal)' opacity='0.9'/%3E%3Cellipse cx='360' cy='255' rx='150' ry='52' fill='none' stroke='%23bfe6ff' stroke-width='2' opacity='0.6'/%3E%3Cellipse cx='360' cy='255' rx='52' ry='150' fill='none' stroke='%23f9c9e6' stroke-width='2' opacity='0.5'/%3E%3Ccircle cx='360' cy='255' r='46' fill='%23091022'/%3E%3Cpath d='M348 236l30 19-30 19z' fill='%2338bdf8'/%3E%3Cg fill='%23ffffff' opacity='0.85'%3E%3Ccircle cx='120' cy='80' r='2.4'/%3E%3Ccircle cx='205' cy='140' r='1.8'/%3E%3Ccircle cx='600' cy='105' r='2.2'/%3E%3Ccircle cx='640' cy='330' r='1.7'/%3E%3Ccircle cx='95' cy='420' r='2'/%3E%3Ccircle cx='520' cy='60' r='1.6'/%3E%3C/g%3E%3Cpath d='M0 480 Q180 430 360 470 T720 450 L720 560 L0 560Z' fill='%23081020' opacity='0.85'/%3E%3Cg stroke='%2338bdf8' stroke-width='2' opacity='0.55' fill='none'%3E%3Cpath d='M90 500h120'/%3E%3Cpath d='M250 512h90'/%3E%3Cpath d='M470 505h140'/%3E%3C/g%3E%3C/svg%3E" alt="传送门最新地址品牌官网首屏主视觉：星环状传送门与播放符号" width="720" height="560" fetchpriority="high">
+        </figure>
+        <div class="pt-hero-badge">本周新增 <b>128</b> 部高清原创</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="pt-section pt-wrap" id="ptFocus" aria-labelledby="ptFocusTitle">
+    <div class="pt-sec-head">
+      <span class="pt-sec-idx">S3</span>
+      <h2 id="ptFocusTitle">焦点内容 · 传送门最新地址本周精选</h2>
+      <p>1 项重点焦点 + 5 项视频条目，覆盖传送门最新地址的内容生态主力方向。</p>
+    </div>
+    <div class="pt-focus-grid">
+      <article class="pt-feature">
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230a2540'/%3E%3Cstop offset='1' stop-color='%232b1a4a'/%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%2338bdf8' stop-opacity='0.85'/%3E%3Cstop offset='1' stop-color='%23f472b6' stop-opacity='0.15'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23g1)'/%3E%3Cg opacity='0.85'%3E%3Crect x='70' y='250' width='70' height='130' rx='6' fill='url(%23g2)'/%3E%3Crect x='170' y='200' width='70' height='180' rx='6' fill='url(%23g2)'/%3E%3Crect x='270' y='150' width='70' height='230' rx='6' fill='url(%23g2)'/%3E%3Crect x='370' y='220' width='70' height='160' rx='6' fill='url(%23g2)'/%3E%3Crect x='470' y='110' width='70' height='270' rx='6' fill='url(%23g2)'/%3E%3Crect x='570' y='170' width='70' height='210' rx='6' fill='url(%23g2)'/%3E%3Crect x='670' y='120' width='70' height='260' rx='6' fill='url(%23g2)'/%3E%3C/g%3E%3Cpath d='M70 235 Q200 130 330 200 T590 150 T740 100' stroke='%23fbbf24' stroke-width='4' fill='none'/%3E%3Ccircle cx='330' cy='200' r='7' fill='%23fbbf24'/%3E%3Ccircle cx='590' cy='150' r='7' fill='%23fbbf24'/%3E%3Ctext x='70' y='70' fill='%23e6eefb' font-size='26' font-family='sans-serif' font-weight='bold'%3E%E5%B9%B4%E5%BA%A6%E5%BD%B1%E5%83%8F%E8%A7%82%E5%AF%9F%3C/text%3E%3Ctext x='70' y='102' fill='%239db1cc' font-size='15' font-family='sans-serif'%3E2026 内容生态数据图谱%3C/text%3E%3C/svg%3E" alt="年度影像观察专题封面：内容生态数据柱状图与趋势曲线" width="800" height="450">
+          <span class="pt-play"><i>▶</i></span>
+        </figure>
+        <div class="pt-feature-body">
+          <div class="pt-tags"><span class="pt-tag">行业观察</span><span class="pt-tag pk">官方发布</span><span class="pt-tag am">高清</span></div>
+          <h3>年度影像观察：2026 视频内容生态的七个变化</h3>
+          <p>从竖屏叙事到长片纪录，从个人创作到企业内容，我们用 4,280 部原创样本梳理出内容生态的七条真实曲线，并给出创作者可执行的选题建议。</p>
+          <div class="pt-meta"><b>传送门研究院</b><span>播放 128.6万</span><span>点赞 <b data-like-count="8600">8,600</b></span><span>评论 1,240</span></div>
+          <div class="pt-acts">
+            <button class="pt-act" type="button" data-like>♡ 点赞</button>
+            <button class="pt-act" type="button" data-fav>☆ 收藏</button>
+            <button class="pt-act" type="button" data-copy>⧉ 复制链接</button>
+            <button class="pt-act" type="button" data-modal="ptReportModal">⚑ 反馈</button>
+          </div>
+        </div>
+      </article>
+
+      <div class="pt-list">
+        <article class="pt-item">
+          <div>
+            <h3>城市漫游：在老街拍出一支有呼吸感的短片</h3>
+            <p>镜头语言、收音与踩点节奏，拆解一支 3 分钟城市纪录片的完整制作流程。</p>
+            <div class="pt-tags"><span class="pt-tag">城市探索</span><span class="pt-tag">教程干货</span></div>
+          </div>
+          <div class="pt-item-side"><span class="pt-num">42.3万</span><span>播放</span><button class="pt-act" type="button" data-like>♡</button></div>
+        </article>
+        <article class="pt-item">
+          <div>
+            <h3>一个人做一档访谈：设备、流程与提问清单</h3>
+            <p>从选题到成片，采访者最常被忽略的六个准备动作，附可下载提问模板说明。</p>
+            <div class="pt-tags"><span class="pt-tag">人物访谈</span><span class="pt-tag pk">创作幕后</span></div>
+          </div>
+          <div class="pt-item-side"><span class="pt-num">36.8万</span><span>播放</span><button class="pt-act" type="button" data-like>♡</button></div>
+        </article>
+        <article class="pt-item">
+          <div>
+            <h3>治愈影像：清晨六点的菜市场烟火</h3>
+            <p>不用旁白也能讲清情绪，环境声与自然光的组合练习。</p>
+            <div class="pt-tags"><span class="pt-tag">治愈影像</span><span class="pt-tag am">日常记录</span></div>
+          </div>
+          <div class="pt-item-side"><span class="pt-num">29.1万</span><span>播放</span><button class="pt-act" type="button" data-like>♡</button></div>
+        </article>
+        <article class="pt-item">
+          <div>
+            <h3>剪辑实战：用三段结构救回一条拖沓素材</h3>
+            <p>真实工程文件演示，讲清转场、音乐与信息节奏的三次调整。</p>
+            <div class="pt-tags"><span class="pt-tag">实用技巧</span><span class="pt-tag">教程干货</span></div>
+          </div>
+          <div class="pt-item-side"><span class="pt-num">24.7万</span><span>播放</span><button class="pt-act" type="button" data-like>♡</button></div>
+        </article>
+        <article class="pt-item">
+          <div>
+            <h3>创作者故事：从机械工程师到全职影像人</h3>
+            <p>三年转型路径、收入结构与心态变化，一次坦诚的长对话。</p>
+            <div class="pt-tags"><span class="pt-tag pk">品牌故事</span><span class="pt-tag">人物访谈</span></div>
+          </div>
+          <div class="pt-item-side"><span class="pt-num">19.5万</span><span>播放</span><button class="pt-act" type="button" data-like>♡</button></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌解析 -->
+  <section class="pt-section pt-wrap" id="ptParse" aria-labelledby="ptParseTitle">
+    <div class="pt-sec-head">
+      <span class="pt-sec-idx">S4</span>
+      <h2 id="ptParseTitle">深度解析：传送门最新地址如何运营一个视频内容品牌</h2>
+      <p>品牌故事 · 内容生态 · 创作者机制 · 品质与口碑</p>
+    </div>
+    <div class="pt-parse">
+      <p><strong>传送门最新地址</strong>并不是一个只做聚合的视频页面，而是一家持续运营内容品牌的官方网站。我们把「传送门」理解为一种观看关系：观众通过一段视频进入陌生的生活，创作者通过镜头找到同频的人。围绕这个理解，品牌官网承担三件事——让精品内容被完整地看见，让创作者的劳动被准确地记录，让企业与合作方的表达被恰当地呈现。</p>
+
+      <h3>一、从内容出发：传送门最新地址的精品内容标准</h3>
+      <p>在传送门最新地址的内容生态里，「高清」只是最低门槛，真正决定一条内容能否进入首页焦点位的是三组标准：<strong>真实性、结构感、可复用性</strong>。真实性要求画面与叙事对得上，不用夸张标题换取点击；结构感要求 3 分钟内能给出清晰的信息层次，观众知道自己在看什么、为什么值得看完；可复用性则要求内容具备二次价值，例如教程能被反复检索，访谈能提炼出可执行的建议。为此编辑团队会为每条重点内容建立标签档案，把题材、拍摄手法、时长结构、适用人群逐项标注，这些档案最终构成了官网的视频索引体系。</p>
+      <p>在具体执行上，我们坚持「少而准」的更新节奏：每周固定三个发布窗口，每个窗口不超过 12 条原创内容，保证编辑有足够时间完成审片与文字说明。品牌官网的焦点位不按热度售卖，而是按内容质量与专题匹配度排布，这也是许多用户把我们称为「值得信赖」的内容入口的原因之一。</p>
+
+      <h3>二、从社区出发：创作者为什么愿意留在传送门最新地址</h3>
+      <p>视频社区的核心不是流量，而是<strong>可预期的成长路径</strong>。传送门最新地址把创作者分为新人、成长、签约三个层级，每个层级都有明确的权益与义务：新人获得脚本与剪辑的基础指导，成长层获得专题联创名额，签约层参与品牌企划与线下放映。我们不承诺一夜爆红，但承诺每一次投稿都有编辑回信，每一条被采用的建议都会在更新日志里署名。</p>
+      <p>社区氛围同样需要设计。评论区默认开启「先看后评」提示，鼓励完整观看再发言；举报反馈在 24 小时内响应；对搬运与抄袭零容忍，正版与原创是官网最常被提及的两个词。过去一年，平台累计处理侵权投诉 316 起，下架违规内容 92 条，这些数字同样发布在官网的企业动态中，接受社区监督。</p>
+
+      <h3>三、从品牌出发：企业内容与官方发布的边界</h3>
+      <p>作为一家面向行业的内容品牌，传送门最新地址也服务企业客户：品牌短片、产品纪录、雇主形象片、行业白皮书视频化。这类内容会统一标注「官方发布」或「合作内容」，并在页面底部说明合作方，绝不与编辑精选混排。我们内部有一条朴素的原则——<strong>企业内容可以好看，但不能假装是自然内容</strong>。这条原则让官网在 B 端与 C 端之间保持了相对清晰的口碑边界。</p>
+      <p>与此同时，品牌故事不只讲成绩。官网的「成长记录」栏目会公开阶段性的问题：某次专题延期、某次活动报名系统故障、某次版本更新的体验倒退，都会如实说明原因与修复时间。我们认为，包容与真实本身就是内容生态的一部分，一个只展示高光的品牌很难获得长期陪伴。</p>
+
+      <h3>四、从长期出发：内容影响力与社会责任</h3>
+      <p>内容品牌的价值最终落在影响力上。传送门最新地址每年联合地方文化机构推出「在地影像计划」，为县镇青年提供拍摄培训与设备支持，作品在官网专题页长期展映；同时为公益组织提供免费影像记录服务，帮助小型机构把真实的工作过程讲清楚。这些项目不直接带来商业收入，却让平台与社区之间形成了更稳固的信任。</p>
+      <p>面向未来，我们会继续深耕视频这一垂直领域：优化检索与专题索引，让老内容重新被发现；完善创作者档案，让每位作者的作品脉络清晰可查；升级官网的辅助工具，让脚本、标题、剪辑思路等创作支持更易用。传送门最新地址希望成为这样一个地方——你从任何一条视频进入，都能顺着内容生态走到更远的地方。</p>
+
+      <div class="pt-parse-grid">
+        <div class="pt-parse-card"><b>内容标准</b><span>真实性、结构感、可复用性三重评审，重点内容建立标签档案。</span></div>
+        <div class="pt-parse-card"><b>创作者机制</b><span>新人—成长—签约三级路径，投稿必有编辑回信。</span></div>
+        <div class="pt-parse-card"><b>商业边界</b><span>官方发布与合作内容统一标注，不与编辑精选混排。</span></div>
+        <div class="pt-parse-card"><b>社会责任</b><span>在地影像计划、公益影像记录与青年拍摄培训。</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="pt-section pt-wrap" id="ptTopics" aria-labelledby="ptTopicsTitle">
+    <div class="pt-sec-head">
+      <span class="pt-sec-idx">S4</span>
+      <h2 id="ptTopicsTitle">专题企划 · 传送门最新地址正在进行的影像计划</h2>
+      <p>4 个专题，每个专题包含简介、更新状态与 3 条内容条目。</p>
+    </div>
+    <div class="pt-topic-grid">
+      <article class="pt-topic">
+        <div class="pt-topic-head"><h3>在地影像 · 四城记</h3><span class="pt-status">更新中</span></div>
+        <p>用一年时间走访四座城市，记录街巷、手艺人与普通人的日常秩序。</p>
+        <ul>
+          <li>第一期：清晨的早点铺与三代人的手艺</li>
+          <li>第二期：老纺织厂改造成的社区影像馆</li>
+          <li>第三期：河岸边的夜跑者群像</li>
+        </ul>
+      </article>
+      <article class="pt-topic">
+        <div class="pt-topic-head"><h3>创作者的第一支片子</h3><span class="pt-status">更新中</span></div>
+        <p>从零到成片的陪伴式企划，完整公开选题、拍摄、剪辑与复盘。</p>
+        <ul>
+          <li>选题课：如何把「想到的」变成「拍得到的」</li>
+          <li>拍摄课：单人团队的机位与收音方案</li>
+          <li>复盘课：三位新人的成片对照与修改建议</li>
+        </ul>
+      </article>
+      <article class="pt-topic">
+        <div class="pt-topic-head"><h3>企业影像公开课</h3><span class="pt-status done">已完结</span></div>
+        <p>面向企业内容团队的 6 集公开课，讲清品牌短片从需求到交付的全流程。</p>
+        <ul>
+          <li>需求拆解：一句话提案如何落地成分镜</li>
+          <li>现场管理：预算、进度与沟通的三条线</li>
+          <li>交付与复用：如何让一支片子用三年</li>
+        </ul>
+      </article>
+      <article class="pt-topic">
+        <div class="pt-topic-head"><h3>冬季创作者大赛</h3><span class="pt-status">报名中</span></div>
+        <p>以「入口」为题，征集 3 分钟以内的原创短片，设新人组与专业组。</p>
+        <ul>
+          <li>赛制说明与评审维度公开</li>
+          <li>参赛作品上传与投票规则</li>
+          <li>获奖作品将在官网专题页长期展映</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="pt-section pt-wrap" id="ptAuthors" aria-labelledby="ptAuthorsTitle">
+    <div class="pt-sec-head">
+      <span class="pt-sec-idx">S5</span>
+      <h2 id="ptAuthorsTitle">创作者矩阵 · 传送门最新地址的 6 位常驻作者</h2>
+      <p>每位作者包含擅长领域、作品数、粉丝数与个人简介。</p>
+    </div>
+    <div class="pt-author-grid">
+      <article class="pt-author">
+        <div class="pt-author-top"><span class="pt-avatar" style="background:linear-gradient(135deg,#38bdf8,#2563eb)">沈</span><div><b>沈野</b><span>城市探索 / 纪录短片</span></div></div>
+        <p>前报纸摄影记者，擅长在陌生街区快速建立信任。作品节奏克制，偏爱环境声与自然光，主张「先站够久，再按快门」。</p>
+        <div class="pt-author-nums"><span>作品 <b>86</b></span><span>粉丝 <b>42.1万</b></span></div>
+      </article>
+      <article class="pt-author">
+        <div class="pt-author-top"><span class="pt-avatar" style="background:linear-gradient(135deg,#f472b6,#a855f7)">林</span><div><b>林小满</b><span>治愈影像 / 日常记录</span></div></div>
+        <p>把厨房、阳台与菜市场拍成系列短片的自由创作者。喜欢用固定机位等待光线变化，认为「治愈不是滤镜，是耐心」。</p>
+        <div class="pt-author-nums"><span>作品 <b>124</b></span><span>粉丝 <b>68.4万</b></span></div>
+      </article>
+      <article class="pt-author">
+        <div class="pt-author-top"><span class="pt-avatar" style="background:linear-gradient(135deg,#fbbf24,#f97316)">陈</span><div><b>陈叙白</b><span>人物访谈 / 深度对话</span></div></div>
+        <p>做过五年播客主持，转型视频后专注长访谈。提问清单以「具体」为第一原则，善于把宏大话题拆成可回答的小问题。</p>
+        <div class="pt-author-nums"><span>作品 <b>57</b></span><span>粉丝 <b>31.6万</b></span></div>
+      </article>
+      <article class="pt-author">
+        <div class="pt-author-top"><span class="pt-avatar" style="background:linear-gradient(135deg,#34d399,#0ea5e9)">周</span><div><b>周见山</b><span>户外活动 / 旅行见闻</span></div></div>
+        <p>徒步与露营内容创作者，拍摄风格硬朗，重视安全与环保说明。每条视频都会标注线路难度、补给点与可撤退路线。</p>
+        <div class="pt-author-nums"><span>作品 <b>93</b></span><span>粉丝 <b>55.2万</b></span></div>
+      </article>
+      <article class="pt-author">
+        <div class="pt-author-top"><span class="pt-avatar" style="background:linear-gradient(135deg,#818cf8,#38bdf8)">唐</span><div><b>唐一禾</b><span>科技前沿 / 深度测评</span></div></div>
+        <p>硬件工程师出身，测评以拆解和数据见长。坚持自购样机、公开测试方法，拒绝未经验证的参数对比。</p>
+        <div class="pt-author-nums"><span>作品 <b>71</b></span><span>粉丝 <b>39.8万</b></span></div>
+      </article>
+      <article class="pt-author">
+        <div class="pt-author-top"><span class="pt-avatar" style="background:linear-gradient(135deg,#f9a8d4,#f43f5e)">苏</span><div><b>苏木</b><span>手作DIY / 创作幕后</span></div></div>
+        <p>木作与纸艺创作者，视频里保留失败的段落。她认为手作内容的魅力不在成品，而在看得见的试错与停顿。</p>
+        <div class="pt-author-nums"><span>作品 <b>64</b></span><span>粉丝 <b>27.3万</b></span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 榜单 + 评论 -->
+  <section class="pt-section pt-wrap" id="ptBoard" aria-labelledby="ptBoardTitle">
+    <div class="pt-sec-head">
+      <span class="pt-sec-idx">S6</span>
+      <h2 id="ptBoardTitle">数据榜单 · 传送门最新地址本周口碑与热度</h2>
+      <p>热度榜、新人榜与口碑摘要，数据每周一更新。</p>
+    </div>
+    <div class="pt-board">
+      <div class="pt-board-col">
+        <h3>本周热度榜 <span>按播放与互动综合</span></h3>
+        <div class="pt-rank"><i>1</i><span>年度影像观察：七个变化</span><em>128.6万</em></div>
+        <div class="pt-rank"><i>2</i><span>城市漫游：有呼吸感的短片</span><em>42.3万</em></div>
+        <div class="pt-rank"><i>3</i><span>一个人做一档访谈</span><em>36.8万</em></div>
+        <div class="pt-rank"><i>4</i><span>清晨六点的菜市场烟火</span><em>29.1万</em></div>
+        <div class="pt-rank"><i>5</i><span>剪辑实战：救回拖沓素材</span><em>24.7万</em></div>
+      </div>
+      <div class="pt-board-col">
+        <h3>新人榜 <span>入驻 90 天内</span></h3>
+        <div class="pt-rank"><i>1</i><span>阿仓的县城观察</span><em>8.9万</em></div>
+        <div class="pt-rank"><i>2</i><span>旧书修复日记</span><em>7.2万</em></div>
+        <div class="pt-rank"><i>3</i><span>通勤路上的三分钟</span><em>6.4万</em></div>
+        <div class="pt-rank"><i>4</i><span>南方小厂的班后生活</span><em>5.1万</em></div>
+        <div class="pt-rank"><i>5</i><span>一只猫与一间画室</span><em>4.7万</em></div>
+      </div>
+      <div class="pt-board-col">
+        <h3>口碑摘要 <span>来自 2,318 条评价</span></h3>
+        <div class="pt-rank"><i>★</i><span>内容质量与说明文字</span><em>4.8 / 5</em></div>
+        <div class="pt-rank"><i>★</i><span>创作者回应速度</span><em>4.6 / 5</em></div>
+        <div class="pt-rank"><i>★</i><span>专题持续更新</span><em>4.7 / 5</em></div>
+        <div class="pt-rank"><i>★</i><span>检索与索引体验</span><em>4.3 / 5</em></div>
+        <div class="pt-rank"><i>★</i><span>整体推荐意愿</span><em>4.7 / 5</em></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="pt-section pt-wrap" id="ptVoice" aria-labelledby="ptVoiceTitle">
+    <div class="pt-sec-head">
+      <span class="pt-sec-idx">S6</span>
+      <h2 id="ptVoiceTitle">用户评价 · 社区眼中的传送门最新地址</h2>
+      <p>来自不同身份用户的真实反馈，长度与关注点各不相同。</p>
+    </div>
+    <div class="pt-comments">
+      <div class="pt-comment">
+        <div class="pt-comment-head"><b>@阿仓</b><span class="pt-stars">★★★★★</span></div>
+        <p>第一次投稿收到了 600 多字的修改建议，连收音问题都标了时间点。对一个新人来说，这种认真比流量重要得多。</p>
+      </div>
+      <div class="pt-comment">
+        <div class="pt-comment-head"><b>@南桥旧事</b><span class="pt-stars">★★★★☆</span></div>
+        <p>专题页做得很用心，老内容能被重新翻出来。唯一希望检索再准一点，有时候关键词会漏掉同义标题。</p>
+      </div>
+      <div class="pt-comment">
+        <div class="pt-comment-head"><b>@品牌内容负责人 李工</b><span class="pt-stars">★★★★★</span></div>
+        <p>合作过一支企业纪录短片，从提案到交付三个月，节点清楚、标注规范。官方内容有独立标识，这点对双方都体面。</p>
+      </div>
+      <div class="pt-comment">
+        <div class="pt-comment-head"><b>@小满的邻居</b><span class="pt-stars">★★★★★</span></div>
+        <p>看治愈影像系列入睡已经成习惯了，没有夸张音效，就是锅铲声和雨声。希望继续更新菜市场的部分。</p>
+      </div>
+      <div class="pt-comment">
+        <div class="pt-comment-head"><b>@夜跑第七年</b><span class="pt-stars">★★★★☆</span></div>
+        <p>户外内容的安全说明做得比很多平台细致，撤退路线和补给点都写了。就是有些长视频加载稍慢。</p>
+      </div>
+      <div class="pt-comment">
+        <div class="pt-comment-head"><b>@正在学剪辑</b><span class="pt-stars">★★★★★</span></div>
+        <p>剪辑实战那期是真实工程文件演示，跟着做了一遍，终于明白节奏问题出在哪。这种内容请多来一点。</p>
+      </div>
+      <div class="pt-comment">
+        <div class="pt-comment-head"><b>@木作学徒</b><span class="pt-stars">★★★★☆</span></div>
+        <p>喜欢保留失败片段的做法，让人知道手作没那么顺。评论区也挺友好，很少见到上来就抬杠的。</p>
+      </div>
+      <div class="pt-comment">
+        <div class="pt-comment-head"><b>@图书管理员</b><span class="pt-stars">★★★★★</span></div>
+        <p>推荐给读者做影像入门，因为官网把每一条内容的说明写清楚了，不会点进去才发现货不对板。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 动态 & 合作 -->
+  <section class="pt-section pt-wrap" aria-labelledby="ptDynTitle">
+    <div class="pt-two-col">
+      <div>
+        <div class="pt-sec-head" style="margin-bottom:16px">
+          <span class="pt-sec-idx">S7</span>
+          <h2 id="ptDynTitle">企业动态 · 传送门最新地址官方发布</h2>
+        </div>
+        <ul class="pt-news">
+          <li><time>2026-11-20</time><b>片库批量更新 128 部高清原创</b><p>覆盖城市探索、手作DIY、科技前沿等方向，全部完成内容说明与标签归档。</p></li>
+          <li><time>2026-11-14</time><b>官网帮助中心改版，FAQ 增至 58 条</b><p>新增投稿、版权、下载与商业合作四类问题，详情页支持折叠展开。</p></li>
+          <li><time>2026-11-06</time><b>冬季创作者大赛开启报名</b><p>设新人组与专业组，报名与上传通道开放至 12 月 20 日，评审维度已公示。</p></li>
+          <li><time>2026-10-28</time><b>新增 3 家内容伙伴入驻生态</b><p>在纪录片制作、影像教育、地方文化传播方向展开专题联创。</p></li>
+        </ul>
+      </div>
+      <div>
+        <div class="pt-sec-head" style="margin-bottom:16px">
+          <span class="pt-sec-idx">S7</span>
+          <h2 id="ptPartnerTitle">合作品牌与伙伴</h2>
+        </div>
+        <div class="pt-partners">
+          <div class="pt-partner">山野纪录<small>户外影像合作</small></div>
+          <div class="pt-partner">禾木工坊<small>手作内容共创</small></div>
+          <div class="pt-partner">城市文化馆<small>在地展映支持</small></div>
+          <div class="pt-partner">明光影像教育<small>创作者培训</small></div>
+          <div class="pt-partner">拾光书屋<small>线下放映场地</small></div>
+          <div class="pt-partner">青禾公益<small>公益影像记录</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="pt-section pt-wrap" id="ptFaq" aria-labelledby="ptFaqTitle">
+    <div class="pt-sec-head">
+      <span class="pt-sec-idx">S7</span>
+      <h2 id="ptFaqTitle">帮助中心 · 关于传送门最新地址的常见问题</h2>
+      <p>投稿、版权、下载与商业合作，点击条目展开查看。</p>
+    </div>
+    <div class="pt-faq">
+      <details><summary>如何向传送门最新地址投稿？</summary><p>在任意页面的「我要投稿」入口填写作品信息与预览片段，提交后 5 个工作日内会收到编辑回信。投稿前请确认作品为原创或已获得完整授权。</p></details>
+      <details><summary>投稿作品需要满足什么技术标准？</summary><p>建议 1080P 及以上、码率不低于 8Mbps，音频单独轨道更佳。时长不限，但 3 到 15 分钟的内容更容易进入编辑精选。</p></details>
+      <details><summary>官网的视频可以下载吗？</summary><p>标注「允许下载」的原创内容可在详情页下载，仅限个人学习使用。商业用途需通过合作通道获取书面授权。</p></details>
+      <details><summary>发现内容被搬运或侵权怎么办？</summary><p>可通过页面反馈入口提交证据，官网承诺 24 小时内响应。核实后将对违规内容下架处理，并在企业动态中同步处理结果。</p></details>
+      <details><summary>企业合作如何开始？</summary><p>请提供品牌背景、内容目标与预算区间，我们会在 3 个工作日内安排内容顾问沟通。合作内容统一标注，不与编辑精选混排。</p></details>
+      <details><summary>创作者层级如何晋升？</summary><p>依据内容质量、更新稳定性与社区反馈综合评定，每季度评审一次。晋升结果会在创作者后台与官网动态同步公布。</p></details>
+      <details><summary>专题企划可以报名参与吗？</summary><p>进行中的专题会在专题页开放报名入口，部分企划仅面向签约创作者。未入选的方案会进入选题库，后续仍可能被启用。</p></details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pt-footer">
+  <div class="pt-wrap">
+    <div class="pt-footer-grid">
+      <div>
+        <div class="pt-footer-brand">传送门最新地址</div>
+        <p>官方网站 · 视频内容品牌 · 持续运营中</p>
+        <p>深耕影像记录、行业观察与创作者社区，为创作者与企业搭建高品质内容生态。</p>
+      </div>
+      <div>
+        <h4>浏览</h4>
+        <ul>
+          <li><a href="#ptFocus">焦点内容</a></li>
+          <li><a href="#ptTopics">专题企划</a></li>
+          <li><a href="#ptAuthors">创作者矩阵</a></li>
+          <li><a href="#ptBoard">数据榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>支持</h4>
+        <ul>
+          <li><a href="#ptFaq">帮助中心</a></li>
+          <li><a href="#ptVoice">用户评价</a></li>
+          <li><a href="#" data-modal="ptSubmitModal">投稿入口</a></li>
+          <li><a href="#" data-modal="ptReportModal">反馈与举报</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <p>内容合作：content@portal-video.example</p>
+        <p>商务合作：brand@portal-video.example</p>
+        <p>工作时间：周一至周五 10:00–19:00</p>
+      </div>
+    </div>
+    <div class="pt-footer-bottom">
+      <span>© 2026 传送门最新地址 官方网站 · 版权所有 · 持续运营中</span>
+      <span>原创内容受版权保护 · 正版授权 · 值得信赖的内容平台</span>
+    </div>
+  </div>
+</footer>
+
+<button class="pt-top" id="ptTopBtn" type="button" aria-label="回到顶部">↑</button>
+<div class="pt-toast" id="ptToast" role="status" aria-live="polite"></div>
+
+<div class="pt-modal" id="ptSubmitModal" role="dialog" aria-modal="true" aria-labelledby="ptSubmitTitle">
+  <div class="pt-modal-box">
+    <button class="pt-modal-close" type="button" data-close aria-label="关闭">×</button>
+    <h3 id="ptSubmitTitle">投稿入口</h3>
+    <p>填写作品名称与简介，编辑会在 5 个工作日内回复。</p>
+    <input type="text" placeholder="作品名称" aria-label="作品名称">
+    <textarea rows="3" placeholder="作品简介：题材、时长、拍摄方式" aria-label="作品简介"></textarea>
+    <button class="pt-btn pt-btn-main" type="button" data-submit>提交投稿</button>
+  </div>
+</div>
+
+<div class="pt-modal" id="ptReportModal" role="dialog" aria-modal="true" aria-labelledby="ptReportTitle">
+  <div class="pt-modal-box">
+    <button class="pt-modal-close" type="button" data-close aria-label="关闭">×</button>
+    <h3 id="ptReportTitle">反馈与举报</h3>
+    <p>请描述问题类型，涉及版权请附作品名称，我们承诺 24 小时内响应。</p>
+    <textarea rows="3" placeholder="问题描述" aria-label="问题描述"></textarea>
+    <button class="pt-btn pt-btn-main" type="button" data-submit>提交反馈</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  var toast=document.getElementById('ptToast');
+  var toastTimer=null;
+  function showToast(msg){
+    toast.textContent=msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer=setTimeout(function(){toast.classList.remove('show');},2200);
+  }
+
+  /* 移动端导航 */
+  var menuBtn=document.getElementById('ptMenuBtn');
+  var nav=document.getElementById('ptNav');
+  if(menuBtn&&nav){
+    menuBtn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+      menuBtn.textContent=open?'收起':'菜单';
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.innerWidth<760){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.textContent='菜单';
+      }
+    });
+  }
+
+  /* 搜索前端反馈 */
+  var searchInput=document.getElementById('ptSearchInput');
+  var searchHint=document.getElementById('ptSearchHint');
+  var index=['年度影像观察','城市漫游短片','访谈制作流程','菜市场烟火','剪辑实战','创作者故事','在地影像四城记','企业影像公开课','新人榜','投稿规则'];
+  if(searchInput&&searchHint){
+    searchInput.addEventListener('input',function(){
+      var v=searchInput.value.trim();
+      if(!v){searchHint.style.display='none';searchHint.textContent='';return;}
+      var hit=index.filter(function(k){return k.indexOf(v)>-1;});
+      searchHint.style.display='block';
+      searchHint.textContent=hit.length?('匹配到 '+hit.length+' 条：'+hit.slice(0,3).join(' / ')):'暂未匹配到相关内容，可尝试「专题」「访谈」等关键词';
+    });
+    searchInput.addEventListener('keydown',function(e){
+      if(e.key==='Enter'){
+        e.preventDefault();
+        showToast(searchInput.value.trim()?('已搜索：'+searchInput.value.trim()):'请输入搜索关键词');
+      }
+    });
+    document.addEventListener('click',function(e){
+      if(!document.getElementById('ptSearchWrap').contains(e.target)){searchHint.style.display='none';}
+    });
+  }
+
+  /* 点赞 */
+  document.addEventListener('click',function(e){
+    var btn=e.target.closest('[data-like]');
+    if(!btn)return;
+    var on=btn.classList.toggle('on');
+    btn.textContent=on?'♥ 已点赞':'♡ 点赞';
+    var counter=btn.closest('.pt-feature')?btn.closest('.pt-feature').querySelector('[data-like-count]'):null;
+    if(counter){
+      var n=parseInt(counter.getAttribute('data-like-count'),10)||0;
+      n=on?n+1:n-1;
+      counter.setAttribute('data-like-count',n);
+      counter.textContent=n.toLocaleString('zh-CN');
+    }
+    showToast(on?'感谢点赞，已记录你的支持':'已取消点赞');
+  });
+
+  /* 收藏 */
+  document.addEventListener('click',function(e){
+    var btn=e.target.closest('[data-fav]');
+    if(!btn)return;
+    var on=btn.classList.toggle('on');
+    btn.textContent=on?'★ 已收藏':'☆ 收藏';
+    showToast(on?'已加入收藏夹':'已取消收藏');
+  });
+
+  /* 复制链接 */
+  document.addEventListener('click',function(e){
+    var btn=e.target.closest('[data-copy]');
+    if(!btn)return;
+    var link='https://portal-video.example/focus/2026-report';
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(link).then(function(){showToast('链接已复制，可分享给朋友');},function(){showToast('复制失败，请手动选择地址');});
+    }else{
+      var ta=document.createElement('textarea');
+      ta.value=link;document.body.appendChild(ta);ta.select();
+      try{document.execCommand('copy');showToast('链接已复制，可分享给朋友');}catch(err){showToast('复制失败，请手动选择地址');}
+      document.body.removeChild(ta);
+    }
+  });
+
+  /* 弹窗 */
+  var lastFocus=null;
+  function openModal(id){
+    var m=document.getElementById(id);
+    if(!m)return;
+    lastFocus=document.activeElement;
+    m.classList.add('show');
+    var input=m.querySelector('input,textarea,button');
+    if(input)input.focus();
+  }
+  function closeModals(){
+    document.querySelectorAll('.pt-modal.show').forEach(function(m){m.classList.remove('show');});
+    if(lastFocus&&lastFocus.focus)lastFocus.focus();
+  }
+  document.addEventListener('click',function(e){
+    var trigger=e.target.closest('[data-modal]');
+    if(trigger){e.preventDefault();openModal(trigger.getAttribute('data-modal'));return;}
+    if(e.target.closest('[data-close]')||e.target.classList.contains('pt-modal')){closeModals();}
+    var submit=e.target.closest('[data-submit]');
+    if(submit){closeModals();showToast('已提交，编辑会尽快与你联系');}
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModals();});
+
+  /* 回到顶部 */
+  var topBtn=document.getElementById('ptTopBtn');
+  window.addEventListener('scroll',function(){
+    topBtn.classList.toggle('show',window.scrollY>520);
+  },{passive:true});
+  topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+
+  /* 卡片悬停动效增强（键盘/触摸无副作用） */
+  document.querySelectorAll('.pt-feature,.pt-topic,.pt-author,.pt-item').forEach(function(el){
+    el.addEventListener('mouseenter',function(){el.style.willChange='transform';});
+    el.addEventListener('mouseleave',function(){el.style.willChange='auto';});
+  });
+})();
+</script>
+</body>
+          </html>
